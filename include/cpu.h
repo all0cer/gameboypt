@@ -1,6 +1,7 @@
 #pragma once
 
 #include <common.h>
+#include <instructions.h>
 
 typedef struct 
 {
@@ -23,6 +24,7 @@ typedef struct
     u16 fetch_data;
     u16 mem_destination;
     u8 current_opcode;
+    instruction *curr_inst;
     
     bool halted;
     bool stepping; 
